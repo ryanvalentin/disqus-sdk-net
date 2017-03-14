@@ -2,7 +2,7 @@ language: csharp
 solution: ./src/Disqus.Core/Disqus.Core.sln
 install:
     - nuget restore ./src/Disqus.Core/Disqus.Core.sln
-    - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
+    - nuget install NUnit.Console -Version 3.6.1 -OutputDirectory testrunner
 script:
     - xbuild /p:Configuration=Release ./src/Disqus.Core/Disqus.Core.sln
-    - mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe ./src/Disqus.Core/Disqus.Core.Tests/bin/Release/Disqus.Core.Tests.dll
+    - mono ./testrunner/NUnit.Console.3.6.1/tools/nunit-console.exe ./src/Disqus.Core/Disqus.Core.Tests/bin/Release/Disqus.Core.Tests.dll
