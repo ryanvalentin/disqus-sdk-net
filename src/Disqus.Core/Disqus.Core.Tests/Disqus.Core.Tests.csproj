@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BC6AAB3-803E-480C-B114-E69B8AD14AAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Disqus.Core.Tests</RootNamespace>
+    <AssemblyName>Disqus.Core.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="bouncy_castle_hmac_sha_pcl">
+      <HintPath>..\packages\BouncyCastle-PCL.1.0.0.6\lib\bouncy_castle_hmac_sha_pcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\Test_DisqusAuthentication.cs" />
+    <Compile Include="Services\Test_DisqusApiService.cs" />
+    <Compile Include="Services\Helpers\FixturesFactory.cs" />
+    <Compile Include="Fixtures\ApiFixtures.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Disqus.Core\Disqus.Core.csproj">
+      <Project>{F7CDF9A4-3365-44E4-B230-79935F443DFC}</Project>
+      <Name>Disqus.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Authentication\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Helpers\" />
+    <Folder Include="Fixtures\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
