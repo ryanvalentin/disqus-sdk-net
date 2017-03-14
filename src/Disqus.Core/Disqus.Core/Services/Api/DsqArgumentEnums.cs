@@ -151,7 +151,23 @@ namespace Disqus.Core.Services.Api
 		ForumForumCategory = 0x032,
 
 		[ArgumentValue("channel_categories")]
-		ChannelCategories = 0x064 // Only works with Channel list API calls
+		ChannelCategories = 0x064, // Only works with Channel list API calls
+
+		[ArgumentValue("forumPermissions")]
+		ForumPermissions = 0x128,
+	}
+
+	[Flags]
+	public enum PostAttachments
+	{
+		[ArgumentValue("")]
+		None = 0x01,
+
+		[ArgumentValue("hasChildren")]
+		HasChildren = 0x02,
+
+		[ArgumentValue("postModHtml")]
+		PostModHtml = 0x04,
 	}
 
 	public enum DsqUserArgumentType

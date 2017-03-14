@@ -36,7 +36,7 @@ namespace Disqus.Core.Services.Api
 		Task<DsqApiResponse<DsqForum>> ForumsDetailsAsync(
 			string forum,
 			bool includeAuthor = false,
-			ForumAttachments attach = ForumAttachments.Counters | ForumAttachments.FollowsForum | ForumAttachments.ForumIntegration
+			ForumAttachments attach = ForumAttachments.None
 		);
 	}
 }

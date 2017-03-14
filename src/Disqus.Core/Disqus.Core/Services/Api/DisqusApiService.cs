@@ -69,6 +69,7 @@ namespace Disqus.Core.Services.Api
 			DsqIncludePost include = DsqIncludePost.Approved | DsqIncludePost.Unapproved | DsqIncludePost.Highlighted,
 			DsqSortOrder order = DsqSortOrder.Newest,
 			string forum = "",
+			PostAttachments attach = PostAttachments.None,
 			string query = ""
 			)
 		{
@@ -79,6 +80,10 @@ namespace Disqus.Core.Services.Api
 				{ new KeyValuePair<string, string>("order", order.ToArgument()) },
 				{ new KeyValuePair<string, string>("cursor", cursor) },
 			};
+
+			foreach (var a in attach.GetFlags().Where(f => f.ToArgument() != ""))
+				if (attach.HasFlag(a))
+					arguments.Add(new KeyValuePair<string, string>("attach", a.ToArgument()));
 
 			foreach (var f in include.GetFlags())
 				if (include.HasFlag(f))
