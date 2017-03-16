@@ -1,0 +1,314 @@
+﻿{
+    "api_key=public&access_token=none&forum=disqus": {
+        "code": 0,
+        "response": {
+            "founder": "3",
+            "twitterName": "disqus",
+            "guidelines": null,
+            "favicon": {
+                "permalink": "http://disqus.com/api/forums/favicons/disqus.jpg",
+                "cache": "https://c.disquscdn.com/uploads/forums/11/favicon.png"
+            },
+            "daysAlive": 14,
+            "createdAt": "2007-07-31T17:44:00",
+            "category": "Tech",
+            "raw_guidelines": null,
+            "id": "disqus",
+            "installCompleted": true,
+            "pk": "11",
+            "channel": null,
+            "description": "<p>The Official Disqus Blog</p>",
+            "raw_description": "The Official Disqus Blog",
+            "permissions": {},
+            "name": "The Disqus Blog",
+            "language": "en",
+            "settings": {
+                "supportLevel": 3,
+                "adsDRNativeEnabled": false,
+                "disable3rdPartyTrackers": true,
+                "adsVideoEnabled": false,
+                "adsProductVideoEnabled": false,
+                "adsPositionTopEnabled": false,
+                "audienceSyncEnabled": false,
+                "unapproveLinks": true,
+                "adsEnabled": false,
+                "adsProductLinksThumbnailsEnabled": false,
+                "adsProductStoriesEnabled": false,
+                "organicDiscoveryEnabled": true,
+                "adsProductDisplayEnabled": false,
+                "discoveryLocked": false,
+                "hasCustomAvatar": false,
+                "linkAffiliationEnabled": false,
+                "allowAnonPost": false,
+                "allowMedia": true,
+                "adultContent": false,
+                "allowAnonVotes": false,
+                "mustVerify": true,
+                "mustVerifyEmail": true,
+                "ssoRequired": false,
+                "mediaembedEnabled": true,
+                "adsPositionBottomEnabled": false,
+                "adsProductLinksEnabled": false,
+                "validateAllPosts": false,
+                "adsSettingsLocked": false,
+                "isVIP": false,
+                "adsPositionInthreadEnabled": false
+            },
+            "url": "http://blog.disqus.com/",
+            "organizationId": 298,
+            "daysThreadAlive": 14,
+            "avatar": {
+                "small": {
+                    "permalink": "http://disqus.com/api/forums/avatars/disqus.jpg?size=32",
+                    "cache": "//a.disquscdn.com/1489617566/images/noavatar32.png"
+                },
+                "large": {
+                    "permalink": "http://disqus.com/api/forums/avatars/disqus.jpg?size=92",
+                    "cache": "//a.disquscdn.com/1489617566/images/noavatar92.png"
+                }
+            },
+            "signedUrl": "http://blog.disqus.com/"
+        }
+    },
+    "api_key=public&access_token=none&forum=disqus&related=author": {
+        "code": 0,
+        "response": {
+            "founder": "3",
+            "twitterName": "disqus",
+            "guidelines": null,
+            "favicon": {
+                "permalink": "http://disqus.com/api/forums/favicons/disqus.jpg",
+                "cache": "https://c.disquscdn.com/uploads/forums/11/favicon.png"
+            },
+            "daysAlive": 14,
+            "createdAt": "2007-07-31T17:44:00",
+            "category": "Tech",
+            "raw_guidelines": null,
+            "author": {
+                "username": "danielha",
+                "about": "CEO at Disqus. The internet is a magical place and I want to live here forever.",
+                "name": "obscurelyfamous",
+                "disable3rdPartyTrackers": false,
+                "url": "http://disqus.com/by/danielha",
+                "isAnonymous": false,
+                "profileUrl": "https://disqus.com/by/danielha/",
+                "isPowerContributor": false,
+                "location": "San Francisco",
+                "isPrivate": false,
+                "signedUrl": "http://disqus.com/by/danielha",
+                "isPrimary": true,
+                "joinedAt": "2007-07-31T18:16:10",
+                "id": "3",
+                "avatar": {
+                    "small": {
+                        "permalink": "http://disqus.com/api/users/avatars/danielha.jpg",
+                        "cache": "https://c.disquscdn.com/uploads/users/3/avatar32.jpg?1392075684"
+                    },
+                    "isCustom": true,
+                    "permalink": "http://disqus.com/api/users/avatars/danielha.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/3/avatar92.jpg?1392075684",
+                    "large": {
+                        "permalink": "http://disqus.com/api/users/avatars/danielha.jpg",
+                        "cache": "https://c.disquscdn.com/uploads/users/3/avatar92.jpg?1392075684"
+                    }
+                }
+            },
+            "id": "disqus",
+            "installCompleted": true,
+            "pk": "11",
+            "channel": null,
+            "description": "<p>The Official Disqus Blog</p>",
+            "raw_description": "The Official Disqus Blog",
+            "permissions": {},
+            "name": "The Disqus Blog",
+            "language": "en",
+            "settings": {
+                "supportLevel": 3,
+                "adsDRNativeEnabled": false,
+                "disable3rdPartyTrackers": true,
+                "adsVideoEnabled": false,
+                "adsProductVideoEnabled": false,
+                "adsPositionTopEnabled": false,
+                "audienceSyncEnabled": false,
+                "unapproveLinks": true,
+                "adsEnabled": false,
+                "adsProductLinksThumbnailsEnabled": false,
+                "adsProductStoriesEnabled": false,
+                "organicDiscoveryEnabled": true,
+                "adsProductDisplayEnabled": false,
+                "discoveryLocked": false,
+                "hasCustomAvatar": false,
+                "linkAffiliationEnabled": false,
+                "allowAnonPost": false,
+                "allowMedia": true,
+                "adultContent": false,
+                "allowAnonVotes": false,
+                "mustVerify": true,
+                "mustVerifyEmail": true,
+                "ssoRequired": false,
+                "mediaembedEnabled": true,
+                "adsPositionBottomEnabled": false,
+                "adsProductLinksEnabled": false,
+                "validateAllPosts": false,
+                "adsSettingsLocked": false,
+                "isVIP": false,
+                "adsPositionInthreadEnabled": false
+            },
+            "url": "http://blog.disqus.com/",
+            "organizationId": 298,
+            "daysThreadAlive": 14,
+            "avatar": {
+                "small": {
+                    "permalink": "http://disqus.com/api/forums/avatars/disqus.jpg?size=32",
+                    "cache": "//a.disquscdn.com/1489617566/images/noavatar32.png"
+                },
+                "large": {
+                    "permalink": "http://disqus.com/api/forums/avatars/disqus.jpg?size=92",
+                    "cache": "//a.disquscdn.com/1489617566/images/noavatar92.png"
+                }
+            },
+            "signedUrl": "http://blog.disqus.com/"
+        }
+    },
+    "api_key=public&access_token=none&forum=channel-discussdisqus": {
+        "code": 0,
+        "response": {
+            "founder": "164577566",
+            "twitterName": "disqus",
+            "guidelines": "<p>You\u2019ve made it to Discuss Disqus \u2013\u2013 the go-to place for asking questions, sharing feedback, and helping others on Disqus. This is also where we share updates about Disqus features and change. We put together this 101 to help you become familiar with how things work here.</p><p><strong>Wait! Search Before You Post</strong><br>Before posting a question or sharing some feedback, you\u2019ll want to check out these links to see if your topic has already been addressed:</p><p><a href=\"https://help.disqus.com/\" rel=\"nofollow noopener\">Knowledge Base</a> Guides and help articles designed to provide quick answers.<br><a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/faq/\" rel=\"nofollow noopener\">F.A.Q.</a> Common questions on Discuss Disqus like, \u201cwhy was my comment removed?\u201d<br><a href=\"https://help.disqus.com/customer/portal/articles/1884370-abuse-faq\" rel=\"nofollow noopener\">Abuse F.A.Q.</a> How to report a user for abusive activity.<br><a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/read_first_known_issues_missing_features_recent_changes_82\" rel=\"nofollow noopener\">Known Issues</a> Issues that Disqus is already aware of.</p><p>You can also check out the Common Questions section below.</p><p><em>Protip: you can search through previous questions on Discuss Disqus <a href=\"https://disq.us/url?url=https%3A%2F%2Fwww.google.com%2F%3Fq%3Dsite%3Ahttp%3A%2F%2Fdisqus.com%2Fhome%2Fchannel%2Fdiscussdisqus%2520%255BKEYWORD%255D%3AJj_q5aAFotl7sGnd3axEyNby-WY&amp;cuid=3189088\" rel=\"nofollow noopener\">like this</a>.</em></p><p><strong>Ask a Question or Share Your Thoughts</strong><br>Still haven\u2019t found the answer you are looking for or have more to say? Feel free to create a discussion with these guidelines and tips in mind:</p><p>\u2022 Specific titles are more likely to get a definitive replies from the community.<br>\u2022 Including links and screenshots makes it easier for others to understand your post (<a href=\"http://disq.us/url?url=http%3A%2F%2Fwww.take-a-screenshot.org%2F%29%3AUr9V5MbqjHKMxzQREuEKq-Wj3Cs&amp;cuid=3189088\" rel=\"nofollow noopener\">http://www.take-a-screenshot.o...</a>.<br>\u2022 Constructive criticism is welcome and encouraged, but we like to keep discussions civil and respectful \u2018round these parts.<br>\u2022 Off-topic discussions (not relating to Disqus) will be removed.</p><p><em>Protip: subscribe to your discussion when you create it so you\u2019ll be notified of new comments.</em></p><p><strong>Pay It Forward</strong><br>If you\u2019ve ever been offered a helping hand on Disqus, now is your chance to return that favor! Be sure to stick around to help out a fellow user by commenting in their discussion. Many people just need a friendly nudge in the right direction, which could be a link to a <a href=\"https://help.disqus.com/\" rel=\"nofollow noopener\">Knowledge Base</a> article or a quick explanation. The <a href=\"https://disqus.com/home/channel/discussdisqus/recent/\" rel=\"nofollow noopener\">Latest Discussions</a> feed is a great place to check for new unanswered questions.</p><p><em>Protip: follow Discuss Disqus from the sidebar and new discussions will show in your feed.</em></p><p><strong>Is Your Discussion a Little Quiet?</strong></p><p>Sharing the discussion with your followers can help others see the question/feedback you posted. You can do that by recommending the discussion or sharing it to social networks like Facebook or Twitter.</p><p><strong>Common Questions</strong><br>These questions show up frequently on Disqus and we\u2019ve included some answers below to help save you some sweet precious time. Each answer contains some helpful links.</p><p><b>Why are my comments removed or \u201ccensored\u201d?</b><br><a href=\"https://help.disqus.com/customer/portal/articles/466223-who-deleted-or-removed-my-comment-\" rel=\"nofollow noopener\">Disqus doesn\u2019t moderate comments</a> for sites that use Disqus. <a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/removed_comments_65/\" rel=\"nofollow noopener\">Each site</a> has their own moderator(s) responsible for approving, deleting, and moderating comments.</p><p><b>How do I contact a site moderators about my comments?</b><br>Sites aren\u2019t required to provide a contact method, but most include a <a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/who_decides_to_delete_comments/\" rel=\"nofollow noopener\">link in their footer</a> which you can easily find by searching \u201ccontact us + site name\u201d. Learn more about site moderators responsibilities <a href=\"https://help.disqus.com/customer/portal/articles/1462592-site-moderators\" rel=\"nofollow noopener\">here</a>.</p><p><b>How can I report a user for abusive behavior?</b><br>Discuss Disqus isn\u2019t the appropriate place to report another user. See the <a href=\"https://help.disqus.com/customer/portal/articles/1884370-abuse-faq\" rel=\"nofollow noopener\">Abuse FAQ</a> for information on how to report a user, or follow up about a user you\u2019ve already <a href=\"https://help.disqus.com/customer/portal/articles/1774987-user-flagging\" rel=\"nofollow noopener\">flagged</a>.</p><p><b>How do I change my profile information (email, avatar, name, etc.)?</b><br>While logged in, you can access your profile settings at <a href=\"https://disqus.com/home/settings/profile/\" rel=\"nofollow noopener\">https://disqus.com/home/settin...</a>. More information on what details you can change in your profile can be found in <a href=\"https://help.disqus.com/customer/portal/articles/1255134-updating-your-disqus-settings\" rel=\"nofollow noopener\">Updating your Disqus Settings</a>.</p><p>Email us at <a href=\"http://disq.us/url?url=mailto%3Adiscuss-disqus%40disqus.com%3ALDZR8o--7I7amcM-26aZqfsP-Tw&amp;cuid=3189088\" rel=\"nofollow noopener\">discuss-disqus@disqus.com</a></p>",
+            "favicon": {
+                "permalink": "http://disqus.com/api/forums/favicons/channel-discussdisqus.jpg",
+                "cache": "https://c.disquscdn.com/uploads/forums/318/9088/favicon.png"
+            },
+            "daysAlive": 90,
+            "createdAt": "2014-08-29T15:49:20.880158",
+            "category": "Tech",
+            "raw_guidelines": "<p>You\u2019ve made it to Discuss Disqus \u2013\u2013 the go-to place for asking questions, sharing feedback, and helping others on Disqus. This is also where we share updates about Disqus features and change. We put together this 101 to help you become familiar with how things work here.</p><p><strong>Wait! Search Before You Post</strong><br>Before posting a question or sharing some feedback, you\u2019ll want to check out these links to see if your topic has already been addressed:</p><p><a href=\"https://help.disqus.com/\" rel=\"nofollow\">Knowledge Base</a> Guides and help articles designed to provide quick answers.<br><a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/faq/\" rel=\"nofollow\">F.A.Q.</a> Common questions on Discuss Disqus like, \u201cwhy was my comment removed?\u201d<br><a href=\"https://help.disqus.com/customer/portal/articles/1884370-abuse-faq\" rel=\"nofollow\">Abuse F.A.Q.</a> How to report a user for abusive activity.<br><a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/read_first_known_issues_missing_features_recent_changes_82\" rel=\"nofollow\">Known Issues</a> Issues that Disqus is already aware of.</p><p>You can also check out the Common Questions section below.</p><p><em>Protip: you can search through previous questions on Discuss Disqus <a href=\"https://www.google.com/?q=site:http://disqus.com/home/channel/discussdisqus%20%5BKEYWORD%5D\" rel=\"nofollow\">like this</a>.</em></p><p><strong>Ask a Question or Share Your Thoughts</strong><br>Still haven\u2019t found the answer you are looking for or have more to say? Feel free to create a discussion with these guidelines and tips in mind:</p><p>\u2022 Specific titles are more likely to get a definitive replies from the community.<br>\u2022 Including links and screenshots makes it easier for others to understand your post (<a href=\"http://www.take-a-screenshot.org/)\" rel=\"nofollow\">http://www.take-a-screenshot.o...</a>.<br>\u2022 Constructive criticism is welcome and encouraged, but we like to keep discussions civil and respectful \u2018round these parts.<br>\u2022 Off-topic discussions (not relating to Disqus) will be removed.</p><p><em>Protip: subscribe to your discussion when you create it so you\u2019ll be notified of new comments.</em></p><p><strong>Pay It Forward</strong><br>If you\u2019ve ever been offered a helping hand on Disqus, now is your chance to return that favor! Be sure to stick around to help out a fellow user by commenting in their discussion. Many people just need a friendly nudge in the right direction, which could be a link to a <a href=\"https://help.disqus.com/\" rel=\"nofollow\">Knowledge Base</a> article or a quick explanation. The <a href=\"https://disqus.com/home/channel/discussdisqus/recent/\" rel=\"nofollow\">Latest Discussions</a> feed is a great place to check for new unanswered questions.</p><p><em>Protip: follow Discuss Disqus from the sidebar and new discussions will show in your feed.</em></p><p><strong>Is Your Discussion a Little Quiet?</strong></p><p>Sharing the discussion with your followers can help others see the question/feedback you posted. You can do that by recommending the discussion or sharing it to social networks like Facebook or Twitter.</p><p><strong>Common Questions</strong><br>These questions show up frequently on Disqus and we\u2019ve included some answers below to help save you some sweet precious time. Each answer contains some helpful links.</p><p><b>Why are my comments removed or \u201ccensored\u201d?</b><br><a href=\"https://help.disqus.com/customer/portal/articles/466223-who-deleted-or-removed-my-comment-\" rel=\"nofollow\">Disqus doesn\u2019t moderate comments</a> for sites that use Disqus. <a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/removed_comments_65/\" rel=\"nofollow\">Each site</a> has their own moderator(s) responsible for approving, deleting, and moderating comments.</p><p><b>How do I contact a site moderators about my comments?</b><br>Sites aren\u2019t required to provide a contact method, but most include a <a href=\"https://disqus.com/home/channel/discussdisqus/discussion/channel-discussdisqus/who_decides_to_delete_comments/\" rel=\"nofollow\">link in their footer</a> which you can easily find by searching \u201ccontact us + site name\u201d. Learn more about site moderators responsibilities <a href=\"https://help.disqus.com/customer/portal/articles/1462592-site-moderators\" rel=\"nofollow\">here</a>.</p><p><b>How can I report a user for abusive behavior?</b><br>Discuss Disqus isn\u2019t the appropriate place to report another user. See the <a href=\"https://help.disqus.com/customer/portal/articles/1884370-abuse-faq\" rel=\"nofollow\">Abuse FAQ</a> for information on how to report a user, or follow up about a user you\u2019ve already <a href=\"https://help.disqus.com/customer/portal/articles/1774987-user-flagging\" rel=\"nofollow\">flagged</a>.</p><p><b>How do I change my profile information (email, avatar, name, etc.)?</b><br>While logged in, you can access your profile settings at <a href=\"https://disqus.com/home/settings/profile/\" rel=\"nofollow\">https://disqus.com/home/settin...</a>. More information on what details you can change in your profile can be found in <a href=\"https://help.disqus.com/customer/portal/articles/1255134-updating-your-disqus-settings\" rel=\"nofollow\">Updating your Disqus Settings</a>.</p><p>Email us at <a href=\"mailto:discuss-disqus@disqus.com\" rel=\"nofollow\">discuss-disqus@disqus.com</a></p>",
+            "id": "channel-discussdisqus",
+            "installCompleted": true,
+            "pk": "3189088",
+            "channel": {
+                "bannerColor": "gray",
+                "isCategory": false,
+                "dateAdded": "2014-09-16T05:20:15",
+                "name": "Discuss Disqus",
+                "options": {
+                    "aboutUrlPath": "/home/channel/discussdisqus/discussion/channel-discussdisqus/discuss_disqus_101/",
+                    "description": "Ongoing topics of discussion about the Disqus product",
+                    "banner_color": "gray",
+                    "banner_timestamp": 1476228709,
+                    "modEmail": "discuss-disqus@disqus.com",
+                    "alertBackground": "//media.disquscdn.com/home/discussdisqus-banner-blank.jpg",
+                    "favicon": "//media.disquscdn.com/home/discussdisqus_favicon.png",
+                    "primaryTopics": [{
+                        "identifier": "installation",
+                        "displayName": "Installation",
+                        "description": "Questions about how to install Disqus on your site."
+                    }, {
+                        "identifier": "embed",
+                        "displayName": "Embed",
+                        "description": "Issues or questions about the comment embed."
+                    }, {
+                        "identifier": "reveal",
+                        "displayName": "REVeal",
+                        "description": "Revenue, payments, ads, and anything in between."
+                    }, {
+                        "identifier": "api",
+                        "displayName": "API",
+                        "description": "Communicate with Disqus data from within your application."
+                    }, {
+                        "identifier": "admin",
+                        "displayName": "Admin",
+                        "description": "Questions about the moderation panel and admin settings."
+                    }, {
+                        "identifier": "community",
+                        "displayName": "Community",
+                        "description": "Growing your community with Disqus. Ask questions and share ideas about cultivating an audience."
+                    }, {
+                        "identifier": "feedback-bug-report",
+                        "displayName": "Feedback/Bug Report",
+                        "description": "Share ideas for feature requests or report bugs."
+                    }],
+                    "tile": "//media.disquscdn.com/home/discussdisqus-tile-final.png",
+                    "titleLogo": {
+                        "small": "//media.disquscdn.com/home/discussdisquss_channel_logo.png",
+                        "cache": "//media.disquscdn.com/home/discussdisquss_channel_logo.png"
+                    },
+                    "coverImage": {
+                        "cache": "//media.disquscdn.com/home/discussdisqus.jpg"
+                    },
+                    "categories": {
+                        "Community Growth": "Ask questions and share ideas about growing your audience.",
+                        "Reveal": "Revenue, payments, ads, and anything in between.",
+                        "Installation": "Questions about how to install Disqus on your site.",
+                        "Admin": "Questions about the moderation panel and admin settings.",
+                        "API": "Communicate with Disqus data from within your application.",
+                        "Bug Reports & Feedback": "Share ideas for feature requests or report bugs.",
+                        "Embed": "Issues or questions about the comment embed."
+                    }
+                },
+                "bannerColorHex": "#7F919E",
+                "id": "2",
+                "hidden": false,
+                "isAggregation": false,
+                "avatar": null,
+                "enableCuration": false,
+                "adminOnly": false,
+                "banner": "https://c.disquscdn.com/uploads/channels/2/banner.png?1476228709",
+                "slug": "discussdisqus",
+                "owner_id": "21035893"
+            },
+            "description": "<p>Ongoing topics of discussion about the Disqus product</p>",
+            "raw_description": "Ongoing topics of discussion about the Disqus product",
+            "permissions": {},
+            "name": "Discuss Disqus",
+            "language": "en",
+            "settings": {
+                "supportLevel": 0,
+                "adsDRNativeEnabled": false,
+                "disable3rdPartyTrackers": true,
+                "adsVideoEnabled": false,
+                "adsProductVideoEnabled": false,
+                "adsPositionTopEnabled": false,
+                "audienceSyncEnabled": false,
+                "unapproveLinks": false,
+                "adsEnabled": false,
+                "adsProductLinksThumbnailsEnabled": false,
+                "adsProductStoriesEnabled": false,
+                "organicDiscoveryEnabled": false,
+                "adsProductDisplayEnabled": false,
+                "discoveryLocked": false,
+                "hasCustomAvatar": true,
+                "linkAffiliationEnabled": true,
+                "allowAnonPost": false,
+                "allowMedia": true,
+                "adultContent": false,
+                "allowAnonVotes": false,
+                "mustVerify": true,
+                "mustVerifyEmail": true,
+                "ssoRequired": false,
+                "mediaembedEnabled": true,
+                "adsPositionBottomEnabled": false,
+                "adsProductLinksEnabled": false,
+                "validateAllPosts": false,
+                "adsSettingsLocked": false,
+                "isVIP": false,
+                "adsPositionInthreadEnabled": false
+            },
+            "url": "http://discussdisqus.disq.us",
+            "organizationId": 291,
+            "daysThreadAlive": 90,
+            "avatar": {
+                "small": {
+                    "permalink": "http://disqus.com/api/forums/avatars/channel-discussdisqus.jpg?size=32",
+                    "cache": "https://c.disquscdn.com/uploads/forums/318/9088/avatar32.jpg?1428445417"
+                },
+                "large": {
+                    "permalink": "http://disqus.com/api/forums/avatars/channel-discussdisqus.jpg?size=92",
+                    "cache": "https://c.disquscdn.com/uploads/forums/318/9088/avatar92.jpg?1428445417"
+                }
+            },
+            "signedUrl": "http://discussdisqus.disq.us"
+        }
+    }
+}

@@ -40,7 +40,6 @@
     <Compile Include="Authentication\Test_DisqusAuthentication.cs" />
     <Compile Include="Services\Test_DisqusApiService.cs" />
     <Compile Include="Services\Helpers\FixturesFactory.cs" />
-    <Compile Include="Fixtures\ApiFixtures.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Disqus.Core\Disqus.Core.csproj">
@@ -56,6 +55,27 @@
     <Folder Include="Services\" />
     <Folder Include="Services\Helpers\" />
     <Folder Include="Fixtures\" />
+    <Folder Include="Fixtures\Data\" />
+    <Folder Include="Fixtures\Data\forums\" />
+    <Folder Include="Fixtures\Data\threads\" />
+    <Folder Include="Fixtures\Data\posts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fixtures\Data\forums\details.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fixtures\Data\posts\list.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fixtures\Data\threads\details.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fixtures\Data\threads\listPosts.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fixtures\Data\users\details.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

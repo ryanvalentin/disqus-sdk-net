@@ -43,8 +43,6 @@ namespace Disqus.Core.Tests.Services
 		[TestCase]
 		public void Test_HandledError()
 		{
-			_factory.StartThrowingErrors(isUnhandled: false);
-
 			DisqusApiException ex = Assert.ThrowsAsync<DisqusApiException>(_apiService.UsersDetailsAsync);
 			Assert.AreEqual("You must either provide a user or authenticate the user.", ex.Message);
 		}
@@ -52,7 +50,7 @@ namespace Disqus.Core.Tests.Services
 		[TestCase]
 		public void Test_UnhandledError()
 		{
-			_factory.StartThrowingErrors(isUnhandled: true);
+			_factory.StartThrowingErrors();
 
 			Exception ex = Assert.ThrowsAsync<Exception>(_apiService.UsersDetailsAsync);
 			Assert.AreEqual("Test Exception", ex.Message);

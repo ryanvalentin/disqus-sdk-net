@@ -8,6 +8,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 using System.Net;
+using System.IO;
+using NUnit.Framework;
 
 namespace Disqus.Core.Tests.Services
 {
@@ -22,8 +24,6 @@ namespace Disqus.Core.Tests.Services
 	public class FixturesFactory : IDisqusApiFactory
 	{
 		private bool _throwErrors = false;
-		private bool _useDisqusApiExceptions = false;
-		private ApiFixtures _fixtures = new ApiFixtures();
 
 		public FixturesFactory()
 		{
@@ -43,35 +43,32 @@ namespace Disqus.Core.Tests.Services
 
 		private Task<T> GetResponse<T>(string resource, string endpoint, List<KeyValuePair<string, string>> arguments = null)
 		{
-			ThrowErrorIfSet();
+			if (_throwErrors)
+				throw new Exception("Test Exception");
 
-			string concatArgs = "";
+			string argKey = $"api_key=public&access_token={AuthMode.ToString().ToLowerInvariant()}";
 			if (arguments != null)
 			{
 				arguments.Sort((x, y) => String.Compare(x.Key, y.Key, StringComparison.InvariantCulture));
-				concatArgs = "?" + String.Join("&", arguments.Select(kv => $"{kv.Key}={WebUtility.UrlEncode(kv.Value)}"));
+				argKey += "&" + String.Join("&", arguments.Select(kv => $"{kv.Key}={WebUtility.UrlEncode(kv.Value)}"));
 			}
 
-			string json = "{}";
+			string path = Path.Combine(TestContext.CurrentContext.TestDirectory, $"Fixtures/Data/{resource}/{endpoint}.json");
+			string jsonStr = File.ReadAllText(path);
 
-			Console.WriteLine($"Looking up '{resource}' with endpoint '{endpoint}{concatArgs}'");
+			Console.WriteLine($"Looking up '{resource}' with endpoint '{endpoint} and key '{argKey}'");
 
-			switch (AuthMode)
+			var json = JObject.Parse(jsonStr);
+
+			if ((int)json[argKey]["code"] > 0)
 			{
-				case AuthenticationMode.None:
-					json = _fixtures.NoAuthResources[resource][$"{endpoint}{concatArgs}"];
-					break;
-				case AuthenticationMode.Authenticated:
-					json = _fixtures.AuthResources[resource][$"{endpoint}{concatArgs}"];
-					break;
-				case AuthenticationMode.Self:
-					json = _fixtures.SelfResources[resource][$"{endpoint}{concatArgs}"];
-					break;
-				default: // case AuthenticationMode.Moderator:
-					return Task.FromResult(default(T));
+				var errorJson = json[argKey].ToObject<DsqApiResponse<string>>();
+				throw new DisqusApiException(errorJson.Code, errorJson.Response, 400);
 			}
 
-			return Task.FromResult(JsonConvert.DeserializeObject<T>(json));
+			var deserialized = json[argKey].ToObject<T>();
+
+			return Task.FromResult(deserialized);
 		}
 
 		public void UpdateAuthentication(IDisqusAuthentication authentication)
@@ -86,32 +83,14 @@ namespace Disqus.Core.Tests.Services
 				AuthMode = AuthenticationMode.Authenticated;
 		}
 
-		public void StartThrowingErrors(bool isUnhandled)
+		public void StartThrowingErrors()
 		{
 			_throwErrors = true;
-			_useDisqusApiExceptions = !isUnhandled;
 		}
 
 		public void StopThrowingErrors()
 		{
 			_throwErrors = false;
-			_useDisqusApiExceptions = false;
-		}
-
-		private void ThrowErrorIfSet()
-		{
-			if (!_throwErrors)
-				return;
-
-			if (_useDisqusApiExceptions)
-			{
-				var data = JsonConvert.DeserializeObject<DsqApiResponse<string>>(ApiFixtures.API_ERROR);
-				throw new DisqusApiException(data.Code, data.Response, 400);
-			}
-			else
-			{
-				throw new Exception("Test Exception");
-			}
 		}
 	}
 }

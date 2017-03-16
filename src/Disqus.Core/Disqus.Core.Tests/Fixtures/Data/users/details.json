@@ -1,0 +1,139 @@
+{
+    "api_key=public&access_token=none": {
+        "code": 2,
+        "response": "You must either provide a user or authenticate the user."
+    },
+    "api_key=public&access_token=self": {
+        "code": 0,
+        "response": {
+            "isFollowing": false,
+            "disable3rdPartyTrackers": false,
+            "isPowerContributor": false,
+            "isFollowedBy": false,
+            "homeOnboardingComplete": true,
+            "isPrimary": true,
+            "id": "117139345",
+            "numFollowers": 23,
+            "emailHash": "55502f40dc8b7c769880b10874abc9d0",
+            "rep": 1.319339,
+            "numFollowing": 0,
+            "flaggedForSpamReview": false,
+            "numPosts": 0,
+            "location": "Everywhere",
+            "isPrivate": false,
+            "joinedAt": "2014-08-06T00:51:34",
+            "email": "test@example.com",
+            "isVerified": true,
+            "username": "disquswindows",
+            "homeFeedOnboardingComplete": true,
+            "numLikesReceived": 0,
+            "reputationLabel": "Average",
+            "about": "See what's trending across the Disqus network!",
+            "name": "Disqus for Windows",
+            "url": "",
+            "isBlocked": false,
+            "numForumsFollowing": 31,
+            "profileUrl": "https://disqus.com/by/disquswindows/",
+            "isOnGlobalBlacklist": false,
+            "reputation": 1.319339,
+            "avatar": {
+                "small": {
+                    "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar32.jpg?1407348814"
+                },
+                "isCustom": true,
+                "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814",
+                "large": {
+                    "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814"
+                }
+            },
+            "signedUrl": "",
+            "isAnonymous": false
+        }
+    },
+    "api_key=public&access_token=none&user=117139345": {
+        "code": 0,
+        "response": {
+            "disable3rdPartyTrackers": false,
+            "isPowerContributor": false,
+            "isPrimary": true,
+            "id": "117139345",
+            "numFollowers": 23,
+            "rep": 1.319339,
+            "numFollowing": 0,
+            "numPosts": 0,
+            "location": "Everywhere",
+            "isPrivate": false,
+            "joinedAt": "2014-08-06T00:51:34",
+            "username": "disquswindows",
+            "numLikesReceived": 0,
+            "reputationLabel": "Average",
+            "about": "See what's trending across the Disqus network!",
+            "name": "Disqus for Windows",
+            "url": "",
+            "numForumsFollowing": 31,
+            "profileUrl": "https://disqus.com/by/disquswindows/",
+            "reputation": 1.319339,
+            "avatar": {
+                "small": {
+                    "permalink": "http://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar32.jpg?1407348814"
+                },
+                "isCustom": true,
+                "permalink": "http://disqus.com/api/users/avatars/disquswindows.jpg",
+                "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814",
+                "large": {
+                    "permalink": "http://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814"
+                }
+            },
+            "signedUrl": "",
+            "isAnonymous": false
+        }
+    },
+    "api_key=public&access_token=authenticated&user=117139345": {
+        "code": 0,
+        "response": {
+            "isFollowing": false,
+            "disable3rdPartyTrackers": false,
+            "isPowerContributor": false,
+            "isFollowedBy": false,
+            "isPrimary": true,
+            "id": "117139345",
+            "numFollowers": 23,
+            "rep": 1.319339,
+            "numFollowing": 0,
+            "numPosts": 0,
+            "location": "Everywhere",
+            "isPrivate": false,
+            "joinedAt": "2014-08-06T00:51:34",
+            "username": "disquswindows",
+            "numLikesReceived": 0,
+            "reputationLabel": "Average",
+            "about": "See what's trending across the Disqus network!",
+            "name": "Disqus for Windows",
+            "url": "",
+            "isBlocked": false,
+            "numForumsFollowing": 31,
+            "profileUrl": "https://disqus.com/by/disquswindows/",
+            "reputation": 1.319339,
+            "avatar": {
+                "small": {
+                    "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar32.jpg?1407348814"
+                },
+                "isCustom": true,
+                "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814",
+                "large": {
+                    "permalink": "https://disqus.com/api/users/avatars/disquswindows.jpg",
+                    "cache": "https://c.disquscdn.com/uploads/users/11713/9345/avatar92.jpg?1407348814"
+                }
+            },
+            "signedUrl": "",
+            "isAnonymous": false
+        }
+    }
+}
