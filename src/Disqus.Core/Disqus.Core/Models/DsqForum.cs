@@ -21,6 +21,9 @@ namespace Disqus.Core.Models
 		[JsonProperty(PropertyName = "founder")]
 		public string Founder { get; set; }
 
+		[JsonProperty(PropertyName = "organizationId")]
+		public long OrganizationId { get; set; }
+
 		[JsonProperty(PropertyName = "author")]
 		[JsonConverter(typeof(DisqusObjectJsonConverter<DsqUser>))]
 		public DsqUser Author { get; set; }

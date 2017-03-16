@@ -109,6 +109,7 @@ namespace Disqus.Core.Tests.Services
 			Assert.AreEqual("http://blog.disqus.com/", data.Response.Url?.OriginalString);
 			Assert.AreEqual("http://disqus.com/api/forums/favicons/disqus.jpg", data.Response.Favicon.Permalink?.OriginalString);
 			Assert.AreEqual("3", data.Response.Founder);
+			Assert.AreEqual(298, data.Response.OrganizationId);
 
 			Assert.IsNull(data.Response.Author);
 			Assert.IsNull(data.Response.NumThreads);
