@@ -48,5 +48,8 @@ namespace Disqus.Core.Models
 
 		[JsonProperty(PropertyName = "canVote")]
 		public bool CanVote { get; set; }
+
+		[JsonProperty(PropertyName = "hasChildren")]
+		public bool? HasChildren { get; set; }
 	}
 }

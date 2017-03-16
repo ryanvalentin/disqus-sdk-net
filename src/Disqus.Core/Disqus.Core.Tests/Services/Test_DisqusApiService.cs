@@ -169,5 +169,19 @@ namespace Disqus.Core.Tests.Services
 
 			Assert.IsTrue(data.Response.Count > 0);
 		}
+
+		[TestCase]
+		public async Task Test_PostsListChildren_AttachHasChildren()
+		{
+			var data = await _apiService.PostsListChildrenAsync(
+				parentPost: "3204697376", 
+				forum: "destructoid", 
+				order: DsqSortOrder.Newest, 
+				attach: PostAttachments.HasChildren
+			);
+
+			Assert.IsNotNull(data.Response.FirstOrDefault()?.HasChildren);
+
+		}
 	}
 }

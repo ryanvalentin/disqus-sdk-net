@@ -99,5 +99,28 @@ namespace Disqus.Core.Services.Api
 			bool includeAuthor = false,
 			ForumAttachments attach = ForumAttachments.None
 		);
+
+		/// <summary>
+		/// Returns a flat list of posts in reply to a comment, and ordered by the date created.
+		/// </summary>
+		/// <returns><see cref="Task{DsqApiResponse{List{DsqPost}}}"/></returns>
+		/// <param name="parentPost">Filter on parent_post. To look up all root comments, you may pass the value "0", however this will require providing the thread parameter.</param>
+		/// <param name="forum">Defaults to all forums you moderate. Use :all to retrieve all forums.</param>
+		/// <param name="order">The sort order of returned posts.</param>
+		/// <param name="limit">The number of posts returned in each call.</param>
+		/// <param name="includeForum">If set to <c>true</c> include forum details.</param>
+		/// <param name="includeThread">If set to <c>true</c> include thread details.</param>
+		/// <param name="include">Specify which post states to include.</param>
+		/// <param name="attach">Specifies metadata attachments on returned posts.</param>
+		Task<DsqApiResponse<List<DsqPost>>> PostsListChildrenAsync(
+			string parentPost,
+			string forum,
+			DsqSortOrder order = DsqSortOrder.Oldest,
+			DsqLimit? limit = null,
+			bool includeForum = false,
+			bool includeThread = false,
+			DsqIncludePost include = DsqIncludePost.Approved | DsqIncludePost.Highlighted,
+			PostAttachments attach = PostAttachments.None
+		);
 	}
 }

@@ -145,5 +145,43 @@ namespace Disqus.Core.Services.Api
 		}
 
 		#endregion
+
+		#region Posts
+
+		public async Task<DsqApiResponse<List<DsqPost>>> PostsListChildrenAsync(
+			string parentPost,
+			string forum,
+			DsqSortOrder order = DsqSortOrder.Oldest,
+			DsqLimit? limit = null,
+			bool includeForum = false,
+			bool includeThread = false,
+			DsqIncludePost include = DsqIncludePost.Approved | DsqIncludePost.Highlighted,
+			PostAttachments attach = PostAttachments.None
+			)
+		{
+			var arguments = new List<KeyValuePair<string, string>>()
+			{
+				{ new KeyValuePair<string, string>("parent_post", parentPost) },
+				{ new KeyValuePair<string, string>("forum", forum) },
+				{ new KeyValuePair<string, string>("limit", limit.ToString()) },
+			 	{ new KeyValuePair<string, string>("order", order.ToArgument()) },
+			};
+
+			if (includeForum)
+				arguments.Add(new KeyValuePair<string, string>("related", "forum"));
+
+			if (includeThread)
+				arguments.Add(new KeyValuePair<string, string>("related", "thread"));
+
+			foreach (var a in attach.GetFlags().Where(f => f.ToArgument() != ""))
+			{
+				if (attach.HasFlag(a))
+					arguments.Add(new KeyValuePair<string, string>("attach", a.ToArgument()));
+			}
+
+			return await _factory.GetApiDataAsync<DsqApiResponse<List<DsqPost>>>("posts", "list", arguments);
+		}
+
+		#endregion
 	}
 }
