@@ -172,7 +172,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "NuGet.Build.Packaging/0.1.248": {
+      "NuGet.Build.Packaging/0.1.313": {
         "type": "package",
         "build": {
           "build/NuGet.Build.Packaging.props": {},
@@ -1493,30 +1493,37 @@
         "tools/install.ps1"
       ]
     },
-    "NuGet.Build.Packaging/0.1.248": {
-      "sha512": "PM40Pu95HeKlh7mHWxndOruEDM/vK/kyCvj9XulcyViK8YlieAGhYujK1qaVJfntPlw/vqyf641CkCnJ/7BbWA==",
+    "NuGet.Build.Packaging/0.1.313": {
+      "sha512": "m01jw+/yOvpQGz76q8S+LAWHddffJJEDSVMi7/FrbSMtfY4sf3q7oFiMqnn0HK4hMl6I3nXXE5mn/4ZWlfkdhw==",
       "type": "package",
-      "path": "nuget.build.packaging/0.1.248",
+      "path": "nuget.build.packaging/0.1.313",
       "files": [
         "build/ApiIntersect.exe",
         "build/ApiIntersect.exe.config",
-        "build/FodyWeavers.xml",
-        "build/GenerateReferenceAssembly.csproj",
         "build/ICSharpCode.Decompiler.dll",
         "build/ICSharpCode.NRefactory.CSharp.dll",
+        "build/ICSharpCode.NRefactory.Cecil.dll",
+        "build/ICSharpCode.NRefactory.Xml.dll",
         "build/ICSharpCode.NRefactory.dll",
-        "build/MSBuild/Imports/Microsoft.Common.Props/ImportBefore/Microsoft.NuGet.Packaging.ImportBefore.props",
-        "build/MSBuild/Microsoft.Common.Targets/ImportAfter/Microsoft.NuGet.Packaging.ImportAfter.targets",
+        "build/Mono.Cecil.Mdb.dll",
+        "build/Mono.Cecil.Pdb.dll",
+        "build/Mono.Cecil.Rocks.dll",
         "build/Mono.Cecil.dll",
         "build/Mono.Options.dll",
         "build/NuGet.Build.Packaging.Authoring.props",
         "build/NuGet.Build.Packaging.Authoring.targets",
+        "build/NuGet.Build.Packaging.Compatibility.props",
+        "build/NuGet.Build.Packaging.CrossTargeting.targets",
+        "build/NuGet.Build.Packaging.Inference.targets",
+        "build/NuGet.Build.Packaging.Legacy.props",
+        "build/NuGet.Build.Packaging.Legacy.targets",
+        "build/NuGet.Build.Packaging.ReferenceAssembly.targets",
         "build/NuGet.Build.Packaging.Tasks.dll",
         "build/NuGet.Build.Packaging.Tasks.pdb",
         "build/NuGet.Build.Packaging.Version.props",
         "build/NuGet.Build.Packaging.props",
         "build/NuGet.Build.Packaging.targets",
-        "nuget.build.packaging.0.1.248.nupkg.sha512",
+        "nuget.build.packaging.0.1.313.nupkg.sha512",
         "nuget.build.packaging.nuspec"
       ]
     },
@@ -4850,7 +4857,7 @@
       "Microsoft.NETCore.Portable.Compatibility >= 1.0.1",
       "NETStandard.Library >= 1.6.1",
       "Newtonsoft.Json >= 10.0.2",
-      "NuGet.Build.Packaging >= 0.1.248",
+      "NuGet.Build.Packaging >= 0.1.313",
       "System.Runtime >= 4.3.0",
       "System.Security.Cryptography.Algorithms >= 4.3.0"
     ],
@@ -4875,7 +4882,7 @@
       "System.Security.Cryptography.Algorithms": "4.3.0",
       "NuGet.Build.Packaging": {
         "target": "Package",
-        "version": "[0.1.248, )"
+        "version": "[0.1.313, )"
       }
     },
     "frameworks": {
