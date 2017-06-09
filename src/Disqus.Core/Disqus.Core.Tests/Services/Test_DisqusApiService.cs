@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Disqus.Core.Authentication;
@@ -162,6 +163,48 @@ namespace Disqus.Core.Tests.Services
 
 			Assert.AreEqual("5589703545", data.Response.Id);
 		}
+
+		[TestCase]
+		public async Task Test_ThreadsSet_Basic()
+		{
+			var data = await _apiService.ThreadsSetAsync(thread: new List<string>() { "1", "2" });
+
+            Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "1"));
+            Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "2"));
+		}
+
+		[TestCase]
+		public async Task Test_ThreadsSet_ByIdentifier()
+		{
+            var data = await _apiService.ThreadsSetAsync(
+                disqusIdentifier: new List<string>() 
+                { 
+                    "5135099144",
+                    "5051790780",
+                }, 
+                forum: "disqus"
+            );
+
+			Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "1"));
+			Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "2"));
+		}
+
+		[TestCase]
+		public async Task Test_ThreadsSet_ByUri()
+		{
+            var data = await _apiService.ThreadsSetAsync(
+                threadUri: new List<Uri>()
+                { 
+                    new Uri("https://blog.disqus.com/introducing-shadow-banning-and-timeouts"),
+                    new Uri("https://blog.disqus.com/ahead-of-the-curve-the-disqus-wordpress-plugin-in-2017"),
+                }, 
+                forum: "disqus"
+            );
+
+			Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "1"));
+			Assert.NotNull(data.Response.FirstOrDefault(t => t.Id == "2"));
+		}
+
 
 		[TestCase]
 		public async Task Test_ThreadsListPosts_Basic()

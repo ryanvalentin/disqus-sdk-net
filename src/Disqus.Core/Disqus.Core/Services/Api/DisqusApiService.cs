@@ -62,6 +62,37 @@ namespace Disqus.Core.Services.Api
 			return await ThreadsDetailsAsync($"ident:{disqusIdentifier}", includeForum, includeAuthor, forum);
 		}
 
+		public async Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(
+			IEnumerable<string> thread,
+			bool includeForum = false,
+			bool includeAuthor = false,
+			string forum = ""
+		    )
+        {
+            var arguments = new List<KeyValuePair<string, string>>(thread.Select(t => new KeyValuePair<string, string>("thread", t)));
+
+			if (includeForum)
+				arguments.Add(new KeyValuePair<string, string>("related", "forum"));
+
+			if (includeAuthor)
+				arguments.Add(new KeyValuePair<string, string>("related", "author"));
+
+			if (!String.IsNullOrEmpty(forum))
+				arguments.Add(new KeyValuePair<string, string>("forum", forum));
+
+            return await _factory.GetApiDataAsync<DsqApiResponse<List<DsqThread>>>("threads", "set", arguments);
+        }
+
+		public async Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(IEnumerable<Uri> threadUri, string forum, bool includeForum = false, bool includeAuthor = false)
+        {
+            return await ThreadsSetAsync(threadUri.Select(t => $"link:{t.OriginalString}"), includeForum, includeAuthor, forum);
+        }
+
+        public async Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(IEnumerable<string> disqusIdentifier, string forum, bool includeForum = false, bool includeAuthor = false)
+        {
+            return await ThreadsSetAsync(disqusIdentifier.Select(t => $"ident:{t}"), includeForum, includeAuthor, forum);
+        }
+
 		public async Task<DsqApiResponse<List<DsqPost>>> ThreadsListPostsAsync(
 			string thread,
 			string cursor = "",

@@ -56,7 +56,7 @@ namespace Disqus.Core.Tests.Services
 			string path = Path.Combine(TestContext.CurrentContext.TestDirectory, $"Fixtures/Data/{resource}/{endpoint}.json");
 			string jsonStr = File.ReadAllText(path);
 
-			Console.WriteLine($"Looking up '{resource}' with endpoint '{endpoint} and key '{argKey}'");
+			Console.WriteLine($"Looking up '{resource}' with endpoint '{endpoint}' and key '{argKey}'");
 
 			var json = JObject.Parse(jsonStr);
 

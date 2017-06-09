@@ -48,6 +48,44 @@ namespace Disqus.Core.Services.Api
 		Task<DsqApiResponse<DsqThread>> ThreadsDetailsAsync(string disqusIdentifier, string forum, bool includeForum = false, bool includeAuthor = false);
 
 		/// <summary>
+		/// Returns an unsorted set of threads given a list of ids.
+		/// </summary>
+		/// <returns><see cref="Task{DsqApiResponse{DsqThread}}"/></returns>
+		/// <param name="thread">Looks up a thread by IDs</param>
+		/// <param name="includeForum">If set to <c>true</c> include forum details.</param>
+		/// <param name="includeAuthor">If set to <c>true</c> include author details.</param>
+		/// <param name="forum">Looks up a forum by ID (aka short name).</param>
+		/// <exception cref="DisqusApiException">Thrown when the Disqus API responds with an error.</exception>
+		Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(
+			IEnumerable<string> thread,
+			bool includeForum = false,
+			bool includeAuthor = false,
+			string forum = ""
+		);
+
+		/// <summary>
+		/// Returns an unsorted set of threads given a list of ids.
+		/// </summary>
+		/// <returns><see cref="Task{DsqApiResponse{DsqThread}}"/></returns>
+		/// <param name="threadUri">The URLs associated with the thread.</param>
+		/// <param name="forum">Looks up a forum by ID (aka short name).</param>
+		/// <param name="includeForum">If set to <c>true</c> include forum details.</param>
+		/// <param name="includeAuthor">If set to <c>true</c> include author details.</param>
+		/// <exception cref="DisqusApiException">Thrown when the Disqus API responds with an error.</exception>
+		Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(IEnumerable<Uri> threadUri, string forum, bool includeForum = false, bool includeAuthor = false);
+
+		/// <summary>
+		/// Returns an unsorted set of threads given a list of ids.
+		/// </summary>
+		/// <returns><see cref="Task{DsqApiResponse{DsqThread}}"/></returns>
+		/// <param name="disqusIdentifier">The custom disqus_identifiers associated with the thread.</param>
+		/// <param name="forum">Looks up a forum by ID (aka short name).</param>
+		/// <param name="includeForum">If set to <c>true</c> include forum details.</param>
+		/// <param name="includeAuthor">If set to <c>true</c> include author details.</param>
+		/// <exception cref="DisqusApiException">Thrown when the Disqus API responds with an error.</exception>
+		Task<DsqApiResponse<List<DsqThread>>> ThreadsSetAsync(IEnumerable<string> disqusIdentifier, string forum, bool includeForum = false, bool includeAuthor = false);
+
+		/// <summary>
 		/// Returns a list of posts within a thread.
 		/// </summary>
 		/// <returns><see cref="Task{DsqApiResponse{List{DsqPost}}}"/></returns>
