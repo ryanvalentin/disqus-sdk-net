@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cffe8146-10b8-4f5d-a8ae-9f4063a5ade9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Disqus.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\DisqusAuthenticationType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\DisqusOAuthAuthentication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\DisqusRemoteAuthentication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\DisqusRemoteUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\IDisqusAuthentication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\SSOHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ArgumentValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ByteHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DisqusObjectJsonConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\EnumExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ProtocolRelativeLinkConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqApiResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqBaseMessageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqChannel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqCursor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqForum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqImageLinks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqMedia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqPost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqThread.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqThreadTopic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DsqUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IDsqIdentifiableModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DisqusApiException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DisqusApiFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DisqusApiService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DsqArgumentEnums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DsqLimit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DsqUserArgument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\IDisqusApiFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\IDisqusApiService.cs" />
+  </ItemGroup>
+</Project>
